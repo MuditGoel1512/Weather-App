@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'/> 
+
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="search-bar">
+                <input class="search-city" value="Delhi" type="text" placeholder="Search..">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="weather-detail-1">
+                <img class="weather-image" src="images/clear.png" alt="">
+                <div class="temp">
+                    <div class="temperature">31&deg;</div>
+                    <!-- <div><i class="fa-regular fa-circle"></i></div> -->
+                    <div>C</div>
+                </div>
+                <div class="weather-type">Mostly Cloudy</div>
+                <hr>
+            </div>
+            <div class="weather-detail-2">
+                <div class="date">21-July-2023</div>
+                <div class="day-time">
+                    <div class="day">Friday</div>
+                    <div class="time">12:44 PM</div>
+                </div>
+                <div class="day-head">Day</div>
+            </div>
+            <div class="city">
+                Dhaka
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-day">
+                <div class="today">Today</div>
+                <div class="tomorrow">Tomorrow</div>
+            </div>
+            <div class="detail-container">
+                <div class="Wind-box box">
+                    <div class="wind">Wind</div>
+                    <div class="wind-speed">6 km/h</div>
+                    <div>East</div>
+                </div>
+                <div class="Humidity-box box">
+                    <div>Humidity</div>
+                    <div class="humidity">69%</div>
+                </div>
+                <div class="feel-box box">
+                    <div>Real Feel</div>
+                    <div class="feel">31 &deg; C</div>
+                </div>
+                <div class="uv-box box">
+                    <div class="index">UV Index</div>
+                    <div>3</div>
+                    <div>Moderate</div>
+                </div>
+                <div class="pressure-box box">
+                    <div>Pressure</div>
+                    <div class="pressure">1000 mb</div>
+                </div>
+                <div class="visibility-box box">
+                    <div>Visibility</div>
+                    <div class="visibility">1000</div>
+                </div>
+                <div class="temperature-box box">
+                    <div>Temperature</div>
+                    <div class="temperature">31&deg;C</div>
+                </div>
+                <div class="sun-box box">
+                    <div>Sun</div>
+                    <div class="rise">
+                        <div>Rise</div>
+                        <div class="sun-rise">5.17 am</div>
+                    </div>
+                    <div class="set">
+                        <div>Set</div>
+                        <div class="sun-set">5.17 am</div>
+                    </div>
+                </div>
+                <div class="moon-box box">
+                    <div>Moon</div>
+                    <div class="rise">
+                        <div>Rise</div>
+                        <div class="moon-rise">5.17 am</div>
+                    </div>
+                    <div class="set">
+                        <div>Set</div>
+                        <div class="moon-set">5.17 am</div>
+                    </div>
+                </div>
+            </div>
+            <div class="rights">
+                <div>All data provided by</div>
+                <div><a href="https://openweathermap.org/">Open Weather App</a></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

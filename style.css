@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins";
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.left{
+    width: 30vw;
+    text-align: center;
+    padding: 2em 5em;
+}
+.search-bar{
+    margin: 1.5em;
+    /* border: 1px solid aqua; */
+    position: relative;
+
+}
+.search-bar div{
+    border: 1px sandybrown;
+    position: relative;
+}
+.search-bar input{
+    background-color: rgb(239, 238, 238);
+    padding: 0.65em 1.4em;
+    border-radius: 20px;
+    width: 90%;
+    font-size: 1em;
+    outline: none;
+    border: none;
+}
+.search-bar i{
+    color: rgb(0, 102, 255);
+    position: absolute;
+    right: 1em;
+    top: 0.65em;
+    
+}
+.search-bar input::placeholder{
+    color: rgb(97, 97, 97);
+}
+.temp{
+    /* max-width: fit-content; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* border: 1px solid black; */
+}
+.temp div:nth-child(1){
+    font-size: 5.3em;
+}
+/* .temp div:nth-child(2){
+    position: absolute;
+    right: 157px;
+    top: 25px;
+    font-size: small;
+} */
+.temp div:nth-child(2){
+    position: absolute;
+    right: 85px;
+    top: 3px;
+    font-size: 4.5em;
+}
+.weather-type{
+    font-size: 1.4em;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+}
+hr{
+    border: 2px solid rgb(238, 238, 238);
+    width: 65%;
+    margin: 2em auto;
+}
+.weather-detail-2{
+    margin: 2.3em;
+    line-height: 2.3em;
+
+}
+.date{
+    font-size: 1.3em;
+}
+.day-time{
+    display: flex;
+    justify-content: center;
+    gap: 0.8em;
+}
+.day{
+    font-size: 1.7em;
+}
+.time{
+    font-size: 1.7em;
+}
+.day-head{
+    font-size: 1.18em;
+}
+.city{
+    font-size: 3em;
+}
+
+
+
+
+.right{
+    width: 62vw;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 3.5em;
+}
+.right-day{
+    display: flex;
+    font-size: 1.5em;
+    gap: 1em;
+}
+.tomorrow{
+    color: gray;
+}
+.detail-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3em 2em;
+}
+.box{
+    /* border: 1px solid rgb(0, 102, 255); */
+    border-radius: 20px;
+    padding: 1em;
+    color: white;
+    background-color: rgb(64, 140, 255);
+    line-height: 2.5em;
+}
+.box div:nth-child(1){
+    font-size: 1.1em;
+}
+.box div:nth-child(2){
+    font-size: 18px;
+}
+.box div:nth-child(3){
+    font-size: 18px;
+}
+.rise{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.set{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rights{
+    display: flex;
+    gap: 0.5rem;
+}
+.rights a:nth-child(2){
+    color: rgb(64, 140, 255);
+    text-decoration: none;
+}
