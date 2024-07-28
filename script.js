@@ -62,7 +62,7 @@ const getWeather = async (URL) =>{
     }
 }
 
-getWeather("https://api.openweathermap.org/data/2.5/weather?units=metric&q=delhi&appid=376405ae4982e2e67689736bb0eecbf5");
+getWeather(`${baseUrl}&q=${delhi}${app_id}`);
 
 btn.addEventListener("click", () =>{
     let city = document.querySelector(".search-city");
