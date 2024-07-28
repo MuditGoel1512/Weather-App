@@ -45,7 +45,6 @@ const getWeather = async (URL) =>{
     document.querySelector(".moon-set").innerHTML = `${timestampToHoursMinutes(data.sys.sunrise)} pm`;
     document.querySelector(".feel").innerHTML = `${data.main.feels_like}&deg;`;
     document.querySelector(".visibility").innerHTML = data.visibility;
-    console.log(data.weather[0].main);
     if(data.weather[0].main === "Haze" || data.weather[0].main === "mist"){
         weatherIcon.src = `images/mist.png`;
     }
@@ -70,6 +69,5 @@ btn.addEventListener("click", () =>{
     let cityVal = city.value;
     
     const URL = `${baseUrl}&q=${cityVal}${app_id}`;
-    console.log(URL);
     getWeather(URL);
 })
